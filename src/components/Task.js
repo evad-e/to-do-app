@@ -1,16 +1,16 @@
 import React from 'react'
 import {FaTimes} from 'react-icons/fa'
+
 const Task = ({task, onDelete}) => {
-    return (
+    
+    
+      
+    return (  
         <div className = 'flex justify-between items-center p-2 '>
                 <div className='flex items-center'>
-                    <input type="checkbox" className='mr-4'></input>
-                    <h3 className=''>{task.text} </h3>
+                    <h2 className="text-xl">{task.text} </h2>
                 </div>
-                
                 <FaTimes onClick = {()=>onDelete(task.id)} style={{color: 'red', cursor:'pointer'}}/>
-            
-            
         </div>
     )
 }
